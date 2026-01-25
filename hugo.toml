@@ -18,8 +18,8 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
   subtitle = "Tech Lead @ Sony | Agile | AI | KMP\n\nWelcome to my personal website. I write about technology, leadership, and software engineering."
   imageUrl = "/img/avatar.png"
   imageTitle = "Sergio Carrilho"
-  imageWidth = 355
-  imageHeight = 355
+  imageWidth = 200
+  imageHeight = 200
   
   [[params.profileMode.buttons]]
     name = "Read My Blog"

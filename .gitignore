@@ -1,0 +1,10 @@
+# Hugo default output
+/public
+/resources
+/.hugo_build.lock
+
+# Dependency directories
+/node_modules
+
+# OS
+.DS_Store

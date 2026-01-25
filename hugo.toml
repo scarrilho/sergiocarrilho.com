@@ -1,0 +1,24 @@
+baseURL = "https://scarrilho.com/"
+languageCode = "en-us"
+title = "Sergio Carrilho"
+theme = ["github.com/jpanther/congo/v2"]
+
+[params]
+  colorScheme = "blowfish"
+  defaultAppearance = "dark" # or light, or auto
+
+[params.author]
+  name = "Sergio Carrilho"
+  headline = "Tech Lead @ Sony | Agile | AI | KMP"
+  image = "img/avatar.jpg" # Placeholder
+  links = [
+    { icon = "github", href = "https://github.com/scarrilho" },
+    { icon = "linkedin", href = "https://linkedin.com/in/scarrilho" },
+    { icon = "twitter", href = "https://twitter.com/scarrilho" },
+    { icon = "medium", href = "https://medium.com/@scarrilho" },
+    { icon = "youtube", href = "https://youtube.com/@sergiocarrilho" }
+  ]
+
+[homepage]
+  layout = "profile"
+  showRecent = true

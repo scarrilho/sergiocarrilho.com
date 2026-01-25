@@ -5,6 +5,7 @@
 
 # Dependency directories
 /node_modules
+/_vendor
 
 # OS
 .DS_Store

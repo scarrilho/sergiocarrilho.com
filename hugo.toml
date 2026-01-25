@@ -8,6 +8,9 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
   ShowShareButtons = true
   ShowReadingTime = true
   displayFullLangName = true
+  
+[params.assets]
+  disableFingerprinting = true
 
 [params.profileMode]
   enabled = true

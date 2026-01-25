@@ -2,4 +2,6 @@ module github.com/scarrilho/sergiocarrilho.com
 
 go 1.21
 
-require github.com/jpanther/congo/v2 v2.13.0 // indirect
+// require github.com/adityatelange/hugo-PaperMod v0.0.0-20230829180907-3392330f808f // indirect
+
+require github.com/adityatelange/hugo-PaperMod v0.0.0-20260125152547-3bb0ca281fd1 // indirect

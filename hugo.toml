@@ -1,26 +1,48 @@
 baseURL = "https://scarrilho.com/"
 languageCode = "en-us"
 title = "Sergio Carrilho"
-[module]
-  [[module.imports]]
-    path = "github.com/jpanther/congo/v2"
+theme = ["github.com/adityatelange/hugo-PaperMod"]
 
 [params]
-  colorScheme = "blowfish"
-  defaultAppearance = "dark" # or light, or auto
+  defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = true
+  displayFullLangName = true
 
-[params.author]
-  name = "Sergio Carrilho"
-  headline = "Tech Lead @ Sony | Agile | AI | KMP"
-  image = "img/avatar.jpg" # Placeholder
-  links = [
-    { icon = "github", href = "https://github.com/scarrilho" },
-    { icon = "linkedin", href = "https://linkedin.com/in/scarrilho" },
-    { icon = "twitter", href = "https://twitter.com/scarrilho" },
-    { icon = "medium", href = "https://medium.com/@scarrilho" },
-    { icon = "youtube", href = "https://youtube.com/@sergiocarrilho" }
-  ]
+[params.profileMode]
+  enabled = true
+  title = "Sergio Carrilho"
+  subtitle = "Tech Lead @ Sony | Agile | AI | KMP\n\nWelcome to my personal website. I write about technology, leadership, and software engineering."
+  imageUrl = "img/avatar.jpg"
+  imageTitle = "Sergio Carrilho"
+  imageWidth = 120
+  imageHeight = 120
+  
+  [[params.profileMode.buttons]]
+    name = "Read My Blog"
+    url = "/posts"
+  
+  [[params.profileMode.buttons]]
+    name = "YouTube"
+    url = "https://youtube.com/@sergiocarrilho"
 
-[homepage]
-  layout = "profile"
-  showRecent = true
+  [[params.profileMode.buttons]]
+    name = "SpeakerDeck"
+    url = "https://speakerdeck.com/scarrilho"
+    
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/scarrilho"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/scarrilho"
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/scarrilho"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 10

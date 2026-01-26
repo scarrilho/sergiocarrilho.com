@@ -41,7 +41,7 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     url = "https://linkedin.com/in/scarrilho"
   [[params.socialIcons]]
     name = "twitter"
-    url = "https://twitter.com/scarrilho"
+    url = "https://x.com/sergiocarrilho"
 
 [menu]
   [[menu.main]]

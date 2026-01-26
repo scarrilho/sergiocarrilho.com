@@ -1,6 +1,6 @@
 ---
 title: "Talks & Webinars"
-layout: "about"
+layout: "talks"
 summary: "talks"
 url: "/talks/"
 ShowShareButtons: false

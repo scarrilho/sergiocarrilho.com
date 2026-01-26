@@ -1,0 +1,162 @@
+{{ define "main" }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</header>
+
+<div class="post-content">
+    {{ .Content }}
+
+    <div class="talks-grid">
+        {{ range .Site.Data.talks }}
+        <div class="talk-card">
+            <div class="talk-media">
+                {{ if .youtube_id }}
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/{{ .youtube_id }}" title="{{ .title }}" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                {{ else }}
+                <div class="no-video-placeholder">
+                    <span>No Recording Available</span>
+                </div>
+                {{ end }}
+            </div>
+
+            <div class="talk-details">
+                <h3 class="talk-title">{{ .title }}</h3>
+                <div class="talk-meta">
+                    <span class="talk-event">{{ .event }}</span>
+                    <span class="talk-date">{{ .date | time.Format ":date_medium" }}</span>
+                </div>
+                <p class="talk-summary">{{ .summary }}</p>
+
+                {{ if .speakerdeck_link }}
+                <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer" class="talk-link-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-monitor">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    View Slides
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<style>
+    .talks-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .talk-card {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--entry);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .talk-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .talk-media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: #000;
+    }
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .no-video-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--tertiary);
+        color: var(--secondary);
+        font-size: 0.9rem;
+    }
+
+    .talk-details {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .talk-title {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .talk-meta {
+        font-size: 0.85rem;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .talk-summary {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+        line-height: 1.6;
+    }
+
+    .talk-link-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: var(--primary);
+        color: var(--theme);
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 500;
+        align-self: flex-start;
+        transition: opacity 0.2s;
+    }
+
+    /* Dark mode adjustment for button text color if needed, assuming --theme is bg color */
+    :root[class="dark"] .talk-link-button {
+        color: #000;
+        /* Usually dark text on light button in dark mode if primary is light */
+    }
+
+    .talk-link-button:hover {
+        opacity: 0.9;
+    }
+</style>
+{{ end }}

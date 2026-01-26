@@ -3,6 +3,10 @@ title: "About"
 layout: "about"
 summary: "about"
 url: "/about/"
+cover:
+    image: "SergioTodai.png"
+    alt: "A cute octopus coding agent"
+    relative: true
 ---
 
 # Hi, I’m Sergio

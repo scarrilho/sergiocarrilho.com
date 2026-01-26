@@ -5,8 +5,10 @@ summary: "about"
 url: "/about/"
 cover:
     image: "SergioTodai.png"
-    alt: "A cute octopus coding agent"
+    alt: "Sergio graduation photo from the University of Tokyo"
     relative: true
+ShowShareButtons: false
+disableShare: true
 ---
 
 # Hi, I’m Sergio

@@ -67,3 +67,9 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     name = "About"
     url = "/about/"
     weight = 10
+
+  [[menu.main]]
+    identifier = "talks"
+    name = "Talks"
+    url = "/talks/"
+    weight = 15

@@ -42,6 +42,12 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
   [[params.socialIcons]]
     name = "twitter"
     url = "https://x.com/sergiocarrilho"
+  [[params.socialIcons]]
+    name = "medium"
+    url = "https://sergiocarrilho.medium.com/"
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://www.youtube.com/@sergiocarrilho"
 
 [menu]
   [[menu.main]]

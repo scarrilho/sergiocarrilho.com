@@ -54,10 +54,10 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-    weight = 10
+    weight = 20
 
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 20
+    weight = 10

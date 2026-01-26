@@ -12,7 +12,8 @@
     {{ .Content }}
 
     <div class="talks-grid">
-        {{ range .Site.Data.talks }}
+        {{ $data := .Resources.GetMatch "talks.yaml" | transform.Unmarshal }}
+        {{ range $data }}
         <div class="talk-card">
             <div class="talk-media">
                 {{ if .youtube_id }}

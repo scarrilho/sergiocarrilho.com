@@ -70,6 +70,8 @@
         overflow: hidden;
         background: var(--entry);
         transition: transform 0.2s, box-shadow 0.2s;
+        display: flex;
+        flex-direction: column;
     }
 
     .talk-card:hover {
@@ -82,6 +84,7 @@
         width: 100%;
         aspect-ratio: 16/9;
         background: #000;
+        flex-shrink: 0;
     }
 
     .video-container {
@@ -112,7 +115,7 @@
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        flex-grow: 1;
     }
 
     .talk-title {
@@ -148,6 +151,7 @@
         font-weight: 500;
         align-self: flex-start;
         transition: opacity 0.2s;
+        margin-top: auto;
     }
 
     /* Dark mode adjustment for button text color if needed, assuming --theme is bg color */

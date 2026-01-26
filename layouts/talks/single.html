@@ -12,20 +12,24 @@
     {{ .Content }}
 
     <div class="talks-grid">
+        {{ $parent := . }}
         {{ $data := .Resources.GetMatch "talks.yaml" | transform.Unmarshal }}
         {{ range $data }}
         <div class="talk-card">
             <div class="talk-media">
-                {{ if .youtube_id }}
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/{{ .youtube_id }}" title="{{ .title }}" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-                </div>
+                {{ if .image }}
+                {{/* Fetch image from page resources */}}
+                {{ $image := $parent.Resources.GetMatch .image }}
+                {{ if $image }}
+                <img loading="lazy" src="{{ $image.RelPermalink }}" alt="{{ .title }}" class="talk-thumbnail">
                 {{ else }}
                 <div class="no-video-placeholder">
-                    <span>No Recording Available</span>
+                    <span>Image Not Found: {{ .image }}</span>
+                </div>
+                {{ end }}
+                {{ else }}
+                <div class="no-video-placeholder">
+                    <span>No Preview Available</span>
                 </div>
                 {{ end }}
             </div>
@@ -38,18 +42,34 @@
                 </div>
                 <p class="talk-summary">{{ .summary }}</p>
 
-                {{ if .speakerdeck_link }}
-                <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer" class="talk-link-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-monitor">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                        <line x1="8" y1="21" x2="16" y2="21"></line>
-                        <line x1="12" y1="17" x2="12" y2="21"></line>
-                    </svg>
-                    View Slides
-                </a>
-                {{ end }}
+                <div class="talk-actions">
+                    {{ if .youtube_id }}
+                    <a href="https://www.youtube.com/watch?v={{ .youtube_id }}" target="_blank"
+                        rel="noopener noreferrer" class="talk-link-button primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-play-circle">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                        Watch Video
+                    </a>
+                    {{ end }}
+
+                    {{ if .speakerdeck_link }}
+                    <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer"
+                        class="talk-link-button secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-monitor">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        View Slides
+                    </a>
+                    {{ end }}
+                </div>
             </div>
         </div>
         {{ end }}
@@ -87,17 +107,11 @@
         flex-shrink: 0;
     }
 
-    .video-container {
-        position: absolute;
-        top: 0;
-        left: 0;
+    .talk-thumbnail {
         width: 100%;
         height: 100%;
-    }
-
-    .video-container iframe {
-        width: 100%;
-        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     .no-video-placeholder {
@@ -139,25 +153,49 @@
         line-height: 1.6;
     }
 
+    .talk-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: auto;
+    }
+
     .talk-link-button {
         display: inline-flex;
         align-items: center;
         gap: 0.5rem;
         padding: 0.5rem 1rem;
-        background: var(--primary);
-        color: var(--theme);
-        text-decoration: none;
         border-radius: 4px;
         font-weight: 500;
-        align-self: flex-start;
+        text-decoration: none;
         transition: opacity 0.2s;
-        margin-top: auto;
+        font-size: 0.9rem;
     }
 
-    /* Dark mode adjustment for button text color if needed, assuming --theme is bg color */
-    :root[class="dark"] .talk-link-button {
+    .talk-link-button.primary {
+        background: var(--primary);
+        color: var(--theme);
+    }
+
+    .talk-link-button.secondary {
+        background: var(--tertiary);
+        color: var(--primary);
+        border: 1px solid var(--border);
+    }
+
+    /* Dark mode adjustments */
+    :root[class="dark"] .talk-link-button.primary {
         color: #000;
-        /* Usually dark text on light button in dark mode if primary is light */
+    }
+
+    :root[class="dark"] .talk-link-button.secondary {
+        color: var(--primary);
+        background: var(--entry);
+    }
+
+    .talk-link-button.secondary:hover {
+        background: var(--primary);
+        color: var(--theme);
     }
 
     .talk-link-button:hover {

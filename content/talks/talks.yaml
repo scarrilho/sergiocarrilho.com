@@ -1,4 +1,5 @@
 - title: "Building a Coding Agent with Kotlin"
+  image: "kotlin.png"
   date: "2024-05-15"
   event: "KotlinConf 2024"
   youtube_id: "dQw4w9WgXcQ"
@@ -6,6 +7,7 @@
   summary: "An in-depth look at how we built a sophisticated coding agent using Kotlin Multiplatform and LLMs."
 
 - title: "Agile Leadership in Tech"
+  image: "agile.png"
   date: "2023-11-10"
   event: "TechPlot 2023"
   youtube_id: ""
@@ -13,6 +15,7 @@
   summary: "Exploring the challenges and strategies of leading agile teams in a large tech organization."
 
 - title: "The Future of AI in Software Development"
+  image: "ai.png"
   date: "2023-08-20"
   event: "AI Summit"
   youtube_id: "dQw4w9WgXcQ"

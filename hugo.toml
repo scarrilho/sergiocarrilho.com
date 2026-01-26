@@ -51,6 +51,12 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
 
 [menu]
   [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 5
+
+  [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"

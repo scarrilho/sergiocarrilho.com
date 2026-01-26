@@ -22,7 +22,7 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
   imageHeight = 200
   
   [[params.profileMode.buttons]]
-    name = "Read My Blog"
+    name = "Articles"
     url = "/posts"
   
   [[params.profileMode.buttons]]
@@ -31,7 +31,7 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
 
   [[params.profileMode.buttons]]
     name = "SpeakerDeck"
-    url = "https://speakerdeck.com/scarrilho"
+    url = "https://speakerdeck.com/sony"
     
   [[params.socialIcons]]
     name = "github"
@@ -46,6 +46,6 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "Blog"
+    name = "Posts"
     url = "/posts/"
     weight = 10

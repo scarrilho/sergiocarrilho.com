@@ -1,6 +1,7 @@
 baseURL = "https://sergiocarrilho.com/"
 languageCode = "en-us"
 title = "Sergio Carrilho"
+googleAnalytics = "G-MDP5QX8V0T"
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 
 [params]

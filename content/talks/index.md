@@ -4,7 +4,7 @@ summary: "talks"
 url: "/talks/"
 ShowShareButtons: false
 disableShare: true
-draft: true
+draft: false
 ---
 
 

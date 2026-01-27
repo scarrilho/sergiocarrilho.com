@@ -1,3 +1,10 @@
+- title: "How a AI Coding Agent Works (in ~100 lines of Kotlin)"
+  summary: "I built a AI simple coding agent with Kotlin and Koog to showcase the base architecture of AI coding agents"
+  image: "octopusAgent.jpg"
+  url: "https://medium.com/p/f9af28e6aeb0"
+  platform: "Medium"
+  date: 2026-01-16T00:00:00Z
+
 - title: "Six Years, Zero Regrets: Sony’s KMP Story"
   summary: "How we evolved from experimental builds to serving hundreds of thousands of users with KMP and Compose Multiplatform"
   image: "kmpSony.jpg"

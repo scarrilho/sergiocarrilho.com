@@ -74,3 +74,9 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     url = "/talks/"
     weight = 15
 
+  [[menu.main]]
+    identifier = "external"
+    name = "External"
+    url = "/external/"
+    weight = 25
+

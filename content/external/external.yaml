@@ -1,0 +1,34 @@
+- title: "Six Years, Zero Regrets: Sony’s KMP Story"
+  summary: "How we evolved from experimental builds to serving hundreds of thousands of users with KMP and Compose Multiplatform"
+  image: "kmpSony.jpg"
+  url: "https://medium.com/p/1528087514d2"
+  platform: "Medium"
+  date: 2025-05-21T00:00:00Z
+
+- title: "From Storming to Performing"
+  summary: "Adaptive Leadership in Agile Teams"
+  image: "agileLeadership.webp"
+  url: "https://medium.com/p/0db732a99570"
+  platform: "Medium"
+  date: 2025-02-13T00:00:00Z
+
+- title: "The Right Tool for the Job"
+  summary: "Why Agile Isn’t Always the Answer"
+  image: "ants.jpg"
+  url: "https://medium.com/p/839764cd8093"
+  platform: "Medium"
+  date: 2025-05-21T00:00:00Z
+
+- title: "7 Lean Wastes Silently Slowing Agile Teams"
+  summary: "How waste influences agile projects, and how we handle them at Sony"
+  image: "dontWasteAgile.jpg"
+  url: "https://www.linkedin.com/pulse/7-lean-wastes-silently-slowing-agile-teams-sergio-carrilho-ktqrc"
+  platform: "LinkedIn"
+  date: 2025-05-29T00:00:00Z
+
+- title: "Doing vs. Being Agile: Are You Really Agile?"
+  summary: "The difference between doing Agile and being Agile. Includes a quick assessment to check if you are really Agile."
+  image: "doingVsBeingAgile.jpg"
+  url: "https://www.linkedin.com/pulse/doing-vs-being-agile-you-really-sergio-carrilho-9uwqc"
+  platform: "LinkedIn"
+  date: 2025-05-20T00:00:00Z

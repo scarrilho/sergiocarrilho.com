@@ -12,7 +12,7 @@
   event: "iOSDC 2025"
   youtube_id: "wLt3lq9FKWs"
   speakerdeck_link: "https://speakerdeck.com/sony/cmptiao-zhan-ji"
-  summary: "Our journey of adopting KMP and CMP at Sony. Talk in Japanese, slides in English."
+  summary: "Our journey of adopting KMP and CMP at Sony. \nTalk in Japanese, slides in English."
 
 - title: "KotlinConf 2025 report"
   image: "kodee.jpg"
@@ -20,5 +20,5 @@
   event: "Sony Live Stream at Connpass"
   youtube_id: "jq49yGMza20"
   speakerdeck_link: "https://speakerdeck.com/sony/kotlinconf-2025-ibentorepoto"
-  summary: "My report of KotlinConf 2025 to the Japanese developer community. Talk in Japanese, slides in English."
+  summary: "My report of KotlinConf 2025 to the Japanese developer community. \nTalk in Japanese, slides in English."
 

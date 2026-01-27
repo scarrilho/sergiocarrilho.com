@@ -2,9 +2,11 @@ baseURL = "https://sergiocarrilho.com/"
 languageCode = "en-us"
 title = "Sergio Carrilho"
 googleAnalytics = "G-MDP5QX8V0T"
+enableRobotsTXT = true
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 
 [params]
+  description = "Sergio Carrilho's personal website containing articles and talks about Technology, Leadership, and Software Engineering."
   defaultTheme = "auto"
   ShowShareButtons = true
   ShowReadingTime = true

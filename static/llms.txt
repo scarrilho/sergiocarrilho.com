@@ -1,0 +1,21 @@
+# Sergio Carrilho
+
+Tech Lead @ Sony | Agile | AI | KMP
+
+This is the personal website of Sergio Carrilho.
+
+## Core Content
+
+- [About](/about) - Professional bio, skills, and background.
+- [Posts](/posts) - Articles on Software Engineering, Agile Leadership, and AI.
+- [Talks](/talks) - Conference talks and presentations (slides/video).
+- [External](/external) - Guest posts and external features.
+
+## Social Links
+
+- [GitHub](https://github.com/scarrilho)
+- [LinkedIn](https://linkedin.com/in/scarrilho)
+- [Twitter/X](https://x.com/sergiocarrilho)
+- [YouTube](https://www.youtube.com/@sergiocarrilho)
+- [SpeakerDeck](https://speakerdeck.com/scarrilho)
+- [Medium](https://medium.com/@sergiocarrilho)

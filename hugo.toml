@@ -1,4 +1,4 @@
-baseURL = "https://scarrilho.com/"
+baseURL = "https://sergiocarrilho.com/"
 languageCode = "en-us"
 title = "Sergio Carrilho"
 theme = ["github.com/adityatelange/hugo-PaperMod"]

@@ -1,9 +1,33 @@
+{{- /* Theme Toggle V2: Force Light Mode Logic */ -}}
+<style>
+  /* Force Light Mode variables when system is dark but user wants light */
+  @media (prefers-color-scheme: dark) {
+    html.light body {
+      --theme: #ffffff;
+      --entry: #ffffff;
+      --primary: #212121;
+      --secondary: #555555;
+      --tertiary: #999999;
+      --content: #212121;
+      --hljs-bg: #ffffff;
+      --code-bg: #f5f5f5;
+      --border: #eeeeee;
+    }
+  }
+</style>
+<script>
+  // Apply 'light' class immediately if preference is stored (prevents FOUC)
+  if (localStorage.getItem("pref-theme") === "light") {
+    document.documentElement.classList.add('light');
+  }
+</script>
+
 {{- /* Custom CSS to override theme styling */ -}}
 <style>
-    /* Increase max-width for profile buttons to prevent wrapping */
-    .buttons {
-        max-width: 800px !important;
-    }
+  /* Increase max-width for profile buttons to prevent wrapping */
+  .buttons {
+    max-width: 800px !important;
+  }
 </style>
 
 {{- /* Favicons */ -}}

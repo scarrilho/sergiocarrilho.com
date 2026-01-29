@@ -74,6 +74,35 @@
         </div>
         {{ end }}
     </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {{- range $index, $element := $data -}}
+        {{- if $index }},{{ end }}
+        {
+          "@type": "ListItem",
+          "position": {{ add $index 1 }},
+          "item": {
+            "@type": "Event",
+            "name": {{ .title | jsonify }},
+            "startDate": {{ .date | jsonify }},
+            "description": {{ .summary | jsonify }},
+            "location": {
+                "@type": "Place",
+                "name": {{ .event | jsonify }}
+            },
+            {{- $img := $parent.Resources.GetMatch .image -}}
+            "image": {{ if $img }}{{ $img.Permalink | jsonify }}{{ else }}""{{ end }},
+            "url": {{ if .youtube_id }}{{ printf "https://www.youtube.com/watch?v=%s" .youtube_id | jsonify }}{{ else }}{{ .speakerdeck_link | jsonify }}{{ end }}
+          }
+        }
+        {{- end -}}
+      ]
+    }
+    </script>
 </div>
 
 <style>

@@ -59,6 +59,40 @@
     "@type": "Organization",
     "name": "Sony"
   },
+
   "description": "Tech Lead @ Sony | Agile | AI | KMP"
 }
 </script>
+
+{{- if .IsPage }}
+{{- if eq .Section "posts" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | plainify | jsonify }},
+  "name": {{ .Title | plainify | jsonify }},
+  "description": {{ with .Description }}{{ . | plainify | jsonify }}{{ else }}{{ .Summary | plainify | jsonify }}{{ end }},
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "wordCount": {{ .WordCount }},
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author | default "Sergio Carrilho" }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "url": "{{ .Permalink }}",
+  {{- if .Params.cover }}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ .Params.cover.image | absURL }}"
+  },
+  {{- end }}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{- end }}
+{{- end }}

@@ -46,6 +46,39 @@
         </a>
         {{ end }}
     </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {{- range $index, $element := $data -}}
+        {{- if $index }},{{ end }}
+        {
+          "@type": "ListItem",
+          "position": {{ add $index 1 }},
+          "item": {
+            "@type": "SocialMediaPosting",
+            "headline": {{ .title | jsonify }},
+            "datePublished": {{ .date | jsonify }},
+            "articleBody": {{ .summary | jsonify }},
+            "author": {
+                "@type": "Person",
+                "name": "Sergio Carrilho"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": {{ .platform | jsonify }}
+            },
+            {{- $img := $parent.Resources.GetMatch .image -}}
+            "image": {{ if $img }}{{ $img.Permalink | jsonify }}{{ else }}""{{ end }},
+            "url": {{ .url | jsonify }}
+          }
+        }
+        {{- end -}}
+      ]
+    }
+    </script>
 </div>
 
 <style>

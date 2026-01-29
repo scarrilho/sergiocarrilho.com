@@ -11,6 +11,8 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
   ShowShareButtons = true
   ShowReadingTime = true
   displayFullLangName = true
+  author = "Sergio Carrilho"
+  keywords = ["Technology", "Leadership", "Software Engineering", "Agile", "AI", "KMP", "Sergio Carrilho"]
   
 [params.assets]
   disableFingerprinting = true

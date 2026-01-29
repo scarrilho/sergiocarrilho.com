@@ -38,6 +38,9 @@
 <link rel="shortcut icon" href="/img/favicon/favicon.ico">
 
 {{- /* JSON-LD Structured Data */ -}}
+{{- template "_internal/opengraph.html" . -}}
+{{- template "_internal/twitter_cards.html" . -}}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

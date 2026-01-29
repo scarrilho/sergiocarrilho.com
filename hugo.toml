@@ -79,7 +79,7 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
 
   [[menu.main]]
     identifier = "external"
-    name = "External"
+    name = "Posts+"
     url = "/external/"
     weight = 25
 

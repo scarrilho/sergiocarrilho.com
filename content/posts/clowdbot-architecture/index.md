@@ -121,21 +121,8 @@ Even though the system looks complex, the core idea is still very simple:
 
 Listen → Think → Act → Repeat
 
-```
-┌──────────────────────────────────────────────────────────┐
-│                                                          │
-│   ┌─────────┐    ┌─────────┐    ┌─────────┐              │
-│   │ LISTEN  │───▶│  THINK  │───▶│   ACT   │              │
-│   │         │    │         │    │         │              │
-│   │ Gateway │    │   LLM   │    │  Tools  │              │
-│   └─────────┘    └─────────┘    └────┬────┘              │
-│        ▲                             │                   │
-│        │                             │                   │
-│        └─────────────────────────────┘                   │
-│                   REPEAT                                 │
-│                                                          │
-└──────────────────────────────────────────────────────────┘
-```
+![A 3D infographic flowchart showing the progression from Gateway to LLM to Tools, with a Repeat loop, presented by the orange lobster character.](lobster_6_control_architecture.jpg)
+
 
 ## Putting It All Together
 

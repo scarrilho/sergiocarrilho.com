@@ -10,8 +10,6 @@ cover:
     relative: true
 ---
 
-# Understanding OpenClaw’s Architecture (A High-Level Tour)
-
 OpenClaw (formerly Clawdbot / Moltbot) has been getting a lot of attention recently. People describe it as an “AI agent”, a “local assistant”, or even “an AI that controls your computer”.
 
 All of those are partially true — but they can also be confusing. (If you want to understand the basics of how AI agents work in general, [I wrote a primer on that](https://sergiocarrilho.medium.com/building-an-ai-coding-agent-in-100-lines-of-kotlin-f9af28e6aeb0).)

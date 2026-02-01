@@ -35,6 +35,8 @@ Let's break these down.
 
 ## 1. The Gateway (How Messages Get In)
 
+![A cartoon orange lobster in a hoodie acting as a receptionist, connecting chat app icons like Telegram and WhatsApp to a server, illustrating the Gateway component.](lobster_1_gateway.jpg)
+
 Most AI tools live inside a single app or website. OpenClaw doesn't. Instead, it runs a daemon (background service) on your actual machine and listens for messages from different places such as chat platforms (Telegram, Discord, WhatsApp, etc) and a local command-line interface. It means you can talk to your computer from your phone. Convenient.
 
 The Gateway is the part responsible for this.
@@ -48,6 +50,8 @@ Why this matters:
 OpenClaw doesn’t care where you talk to it from. A message sent from Telegram and one typed locally are treated the same way.
 
 ## 2. The Brain (The AI Model)
+
+![An orange lobster holding a task clipboad connected by a light beam to a giant glowing holographic brain, representing the AI model or 'Brain' of the architecture.](lobster_2_brain.jpg)
 
 OpenClaw itself is not an AI model. Instead, it outsources cognition to OpenAI (ChatGPT), Anthropic (Claude) or some local LLM instance if you care about privacy (you should). 
 
@@ -63,6 +67,8 @@ This is how it works:
 OpenClaw decides how to talk to the model; the model decides what to do next.
 
 ## 3. The Hands (Tools and Skills)
+
+![An orange lobster with multiple robotic arms holding tools like a magnifying glass, folder, and browser window, visualizing the 'Hands' or tool capabilities of the agent.](lobster_3_hands.jpg)
 
 This is the part that makes OpenClaw feel powerful — and different from a normal chatbot.
 
@@ -81,6 +87,8 @@ This keeps actions explicit and (at least in theory) safer.
 
 ## 4. Memory (How It Remembers Things)
 
+![An orange lobster writing in a journal at a desk with files stacked nearby, illustrating the concept of simple, text-based Memory.](lobster_4_memory.jpg)
+
 Many AI systems store memory in complex databases that are hard to inspect. OpenClaw takes a simpler approach.
 
 How memory works:
@@ -96,6 +104,8 @@ If the agent learns something incorrect, you don’t need special tools to fix i
 Memory is transparent, not hidden.
 
 ## 5. The Control Loop (How Everything Fits Together)
+
+![A circular diagram with icons for Listen, Think, and Act, with an orange lobster in the center conducting the flow, representing the Control Loop.](lobster_5_control_loop.jpg)
 
 All of these parts are tied together by a simple loop that runs continuously:
 1) Receive a message (via the Gateway)

@@ -1,7 +1,7 @@
 ---
 title: "Understanding OpenClaw’s Architecture (A High-Level Tour)"
 date: 2026-02-01T23:13:10+09:00
-draft: true
+draft: false
 tags: ["openclaw", "architecture", "ai", "software-design", "clawdbot", "moltbot", "ai-agents"]
 author: "Sergio Carrilho"
 cover:

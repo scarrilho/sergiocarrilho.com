@@ -69,6 +69,11 @@
                         View Slides
                     </a>
                     {{ end }}
+
+                    {{ $talkDate := .date | time.AsTime }}
+                    {{ if $talkDate.After now }}
+                    <span class="upcoming-label">Upcoming</span>
+                    {{ end }}
                 </div>
             </div>
         </div>
@@ -240,6 +245,18 @@
 
     .talk-link-button:hover {
         opacity: 0.9;
+    }
+
+    .upcoming-label {
+        margin-left: auto;
+        align-self: center;
+        background: #e63946;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
     }
 </style>
 {{ end }}

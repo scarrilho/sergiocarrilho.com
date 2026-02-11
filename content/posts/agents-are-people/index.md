@@ -22,7 +22,7 @@ Lol. I've been thinking about that ever since.
 
 ## The Anatomy
 
-![Anthropomorphic fox inventor assembling a floating ai agent model consisting of a crystalline brain, mechanical hands, and a floating book. a curious young fox looks on in a slate blue and forest green stylized studio setting](fox_4_explanation.jpg)
+![Anthropomorphic fox inventor assembling a floating ai agent model consisting of a crystalline brain, mechanical hands, and a floating book. a curious young fox looks on in a slate blue and forest green stylized studio setting.](fox_4_explanation.jpg)
 
 If you strip away the hype and the venture capital fairy dust, an AI agent is really just three things stitched together:
 

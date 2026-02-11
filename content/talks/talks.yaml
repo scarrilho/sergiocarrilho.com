@@ -1,3 +1,11 @@
+- title: "Sony's KMP Journey: Scaling BLE & Hardware with Kotlin Multiplatform"
+  image: "kotlinconf2026-sergio-sony-banner.jpeg"
+  date: "2026-05-20"
+  event: "KotlinConf2026"
+  youtube_id: ""
+  speakerdeck_link: ""
+  summary: "UPCOMING. I will talk about our journey of adopting KMP and CMP at Sony and how it transformed our mobile app development."
+
 - title: "Micro-reboots: The ACE mindset"
   image: "agilejapan2025cover.jpg"
   date: "2025-11-13"

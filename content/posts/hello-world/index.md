@@ -2,7 +2,7 @@
 title: "Hello World"
 date: 2024-03-20T10:00:00+09:00
 draft: true
-tags: ["intro", "personal", "kotlin", "ai"]
+tags: 
 author: "Sergio Carrilho"
 cover:
     image: "OctopusAgent.png"

@@ -89,3 +89,9 @@ buildFuture = true
     url = "/external/"
     weight = 25
 
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+

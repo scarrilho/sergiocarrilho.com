@@ -2,7 +2,7 @@
 title: "AI Agents are Just People?"
 date: 2026-02-11T19:38:46+09:00
 draft: false
-tags: ["ai-agents", "llm", "agentic-workflows", "artificial-intelligence", "cognitive-architecture"]
+tags: ["ai", "agents", "architecture"]
 author: "Sergio Carrilho"
 cover:
     image: "ai-agents-humans-banner.jpg"

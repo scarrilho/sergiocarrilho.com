@@ -1,0 +1,12 @@
+/* assets/css/extended/tags.css */
+/* Ensure cover images are displayed on tag list pages */
+.tag-entry .entry-cover {
+    display: block !important;
+}
+
+/* Ensure the image itself is visible and responsive */
+.tag-entry .entry-cover img {
+    display: block !important;
+    max-width: 100%;
+    height: auto;
+}

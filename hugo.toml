@@ -14,7 +14,12 @@ buildFuture = true
   displayFullLangName = true
   author = "Sergio Carrilho"
   keywords = ["Technology", "Leadership", "Software Engineering", "Agile", "AI", "KMP", "Sergio Carrilho"]
-  
+
+[params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
+
 [params.assets]
   disableFingerprinting = true
 

@@ -7,6 +7,14 @@
   summary: "UPCOMING. I will talk about our journey of adopting KMP and CMP at Sony and how it transformed our mobile app development."
 
 - title: "Micro-reboots: The ACE mindset"
+  image: "AgileJapanSattelite2026.jpg"
+  date: "2026-04-24"
+  event: "Agile Japan Satellite Event 2026"
+  youtube_id: ""
+  speakerdeck_link: ""
+  summary: "UPCOMING. Based on the talk I gave at Agile Japan 2025 with updated information"
+
+- title: "Micro-reboots: The ACE mindset"
   image: "agilejapan2025cover.jpg"
   date: "2025-11-13"
   event: "Agile Japan 2025"

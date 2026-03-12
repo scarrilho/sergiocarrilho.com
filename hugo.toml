@@ -33,16 +33,16 @@ buildFuture = true
   imageHeight = 200
   
   [[params.profileMode.buttons]]
-    name = "Articles"
-    url = "/posts"
-  
-  [[params.profileMode.buttons]]
     name = "YouTube"
     url = "https://youtube.com/@sergiocarrilho"
 
   [[params.profileMode.buttons]]
     name = "SpeakerDeck"
     url = "https://speakerdeck.com/scarrilho"
+    
+  [[params.profileMode.buttons]]
+    name = "SpeakerDeck Sony"
+    url = "https://speakerdeck.com/sony"
     
   [[params.socialIcons]]
     name = "github"

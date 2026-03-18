@@ -46,7 +46,7 @@
                     <div class="talk-links">
                         {{ if .youtube_id }}
                         <a href="https://www.youtube.com/watch?v={{ .youtube_id }}" target="_blank"
-                            rel="noopener noreferrer" class="talk-link-button primary">
+                            rel="noopener noreferrer" class="talk-link-button btn-watch">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-play-circle">
@@ -59,7 +59,7 @@
 
                         {{ if .speakerdeck_link }}
                         <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer"
-                            class="talk-link-button secondary">
+                            class="talk-link-button btn-slides">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-monitor">
@@ -73,7 +73,7 @@
 
                         {{ if .link }}
                         <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
-                            class="talk-link-button secondary">
+                            class="talk-link-button btn-watch">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-external-link">
@@ -231,39 +231,39 @@
     .talk-link-button {
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         gap: 0.5rem;
-        padding: 0.5rem 1rem;
+        
+        /* Match Upcoming label perfectly */
+        padding: 6px 12px;
         border-radius: 4px;
-        font-weight: 500;
+        font-size: 0.85rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        color: white;
+        
         text-decoration: none;
         transition: opacity 0.2s;
-        font-size: 0.9rem;
+        border: none;
     }
 
-    .talk-link-button.primary {
+    .talk-link-button.btn-watch {
         background: var(--primary);
         color: var(--theme);
     }
 
-    .talk-link-button.secondary {
-        background: var(--tertiary);
-        color: var(--primary);
-        border: 1px solid var(--border);
+    .talk-link-button.btn-slides {
+        background: #666666; /* Medium grey */
+        color: white;
     }
 
-    /* Dark mode adjustments */
-    :root[class="dark"] .talk-link-button.primary {
+    /* Keep text white in dark mode on these fixed grey backgrounds */
+    :root[class="dark"] .talk-link-button {
+        color: white;
+    }
+
+    :root[class="dark"] .talk-link-button.btn-watch {
         color: #000;
-    }
-
-    :root[class="dark"] .talk-link-button.secondary {
-        color: var(--primary);
-        background: var(--entry);
-    }
-
-    .talk-link-button.secondary:hover {
-        background: var(--primary);
-        color: var(--theme);
     }
 
     .talk-link-button:hover {

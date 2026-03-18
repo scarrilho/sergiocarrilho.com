@@ -72,7 +72,7 @@
 
                         {{ if .link }}
                         <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
-                            class="talk-link-button btn-watch">
+                            class="talk-link-button btn-website">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-external-link">
@@ -251,12 +251,18 @@
         color: white;
     }
 
+    .talk-link-button.btn-website {
+        background: #999999; /* Grey between Watch Video and View Slides */
+        color: #000;
+    }
+
     /* Keep text white in dark mode on these fixed grey backgrounds */
     :root[class="dark"] .talk-link-button {
         color: white;
     }
 
-    :root[class="dark"] .talk-link-button.btn-watch {
+    :root[class="dark"] .talk-link-button.btn-watch,
+    :root[class="dark"] .talk-link-button.btn-website {
         color: #000;
     }
 

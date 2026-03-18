@@ -37,10 +37,27 @@
 <link rel="manifest" href="/img/favicon/site.webmanifest">
 <link rel="shortcut icon" href="/img/favicon/favicon.ico">
 
-{{- /* JSON-LD Structured Data */ -}}
-{{- template "_internal/opengraph.html" . -}}
-{{- template "_internal/twitter_cards.html" . -}}
+{{- /* Canonical URL */ -}}
+<link rel="canonical" href="{{ .Permalink }}">
 
+{{- /* JSON-LD: WebSite schema (homepage only) */ -}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sergio Carrilho",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "Sergio Carrilho"
+  }
+}
+</script>
+{{- end }}
+
+{{- /* JSON-LD: Person schema (all pages) */ -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,47 +69,19 @@
     "https://linkedin.com/in/scarrilho",
     "https://x.com/sergiocarrilho",
     "https://sergiocarrilho.medium.com/",
-    "https://www.youtube.com/@sergiocarrilho"
+    "https://www.youtube.com/@sergiocarrilho",
+    "https://speakerdeck.com/scarrilho"
   ],
   "jobTitle": "Tech Lead",
   "worksFor": {
     "@type": "Organization",
     "name": "Sony"
   },
-
-  "description": "Tech Lead @ Sony | Agile | AI | KMP"
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Tokyo"
+  },
+  "knowsAbout": ["Software Engineering", "Agile", "Kotlin Multiplatform", "AI", "Leadership"],
+  "description": "Tech Lead at Sony specializing in Agile software development, Kotlin Multiplatform, and AI engineering."
 }
 </script>
-
-{{- if .IsPage }}
-{{- if eq .Section "posts" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ .Title | plainify | jsonify }},
-  "name": {{ .Title | plainify | jsonify }},
-  "description": {{ with .Description }}{{ . | plainify | jsonify }}{{ else }}{{ .Summary | plainify | jsonify }}{{ end }},
-  "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "wordCount": {{ .WordCount }},
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Site.Params.author | default "Sergio Carrilho" }}",
-    "url": "{{ .Site.BaseURL }}"
-  },
-  "url": "{{ .Permalink }}",
-  {{- if .Params.cover }}
-  "image": {
-    "@type": "ImageObject",
-    "url": "{{ .Params.cover.image | absURL }}"
-  },
-  {{- end }}
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
-  }
-}
-</script>
-{{- end }}
-{{- end }}

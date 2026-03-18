@@ -1,7 +1,51 @@
 User-agent: *
-{{ if eq hugo.Environment "production" }}
+{{- if eq hugo.Environment "production" }}
 Allow: /
-{{ else }}
+{{- else }}
 Disallow: /
-{{ end }}
+{{- end }}
+
 Sitemap: {{ "sitemap.xml" | absURL }}
+
+# AI Crawlers
+User-agent: GPTBot
+{{- if eq hugo.Environment "production" }}
+Allow: /
+{{- else }}
+Disallow: /
+{{- end }}
+
+User-agent: ChatGPT-User
+{{- if eq hugo.Environment "production" }}
+Allow: /
+{{- else }}
+Disallow: /
+{{- end }}
+
+User-agent: Google-Extended
+{{- if eq hugo.Environment "production" }}
+Allow: /
+{{- else }}
+Disallow: /
+{{- end }}
+
+User-agent: PerplexityBot
+{{- if eq hugo.Environment "production" }}
+Allow: /
+{{- else }}
+Disallow: /
+{{- end }}
+
+User-agent: ClaudeBot
+{{- if eq hugo.Environment "production" }}
+Allow: /
+{{- else }}
+Disallow: /
+{{- end }}
+
+User-agent: anthropic-ai
+{{- if eq hugo.Environment "production" }}
+Allow: /
+{{- else }}
+Disallow: /
+{{- end }}

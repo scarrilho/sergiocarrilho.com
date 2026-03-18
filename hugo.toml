@@ -1,19 +1,24 @@
 baseURL = "https://sergiocarrilho.com/"
 languageCode = "en-us"
+defaultContentLanguage = "en"
 title = "Sergio Carrilho"
 googleAnalytics = "G-MDP5QX8V0T"
 enableRobotsTXT = true
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 buildFuture = true
 
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
 [params]
-  description = "Sergio Carrilho's personal website containing articles and talks about Technology, Leadership, and Software Engineering."
+  description = "Sergio Carrilho — Tech Lead at Sony. Articles and talks on Software Engineering, Agile Leadership, Kotlin Multiplatform, and AI."
   defaultTheme = "auto"
   ShowShareButtons = true
   ShowReadingTime = true
   displayFullLangName = true
   author = "Sergio Carrilho"
-  keywords = ["Technology", "Leadership", "Software Engineering", "Agile", "AI", "KMP", "Sergio Carrilho"]
+  keywords = ["Sergio Carrilho", "Tech Lead", "Sony", "Software Engineering", "Agile", "AI", "Kotlin Multiplatform", "KMP", "Leadership", "AI Agents", "Technology"]
 
 [params.cover]
   hidden = false

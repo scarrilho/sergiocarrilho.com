@@ -1,21 +1,53 @@
 # Sergio Carrilho
 
-Tech Lead @ Sony | Agile | AI | KMP
+> Tech Lead at Sony | Agile | AI | Kotlin Multiplatform
 
-This is the personal website of Sergio Carrilho.
+Sergio Carrilho is a technology leader and software engineer based in Tokyo, Japan. He graduated from the University of Tokyo's School of Engineering and currently works at Sony as a Tech Lead, where he has contributed to the launch of multiple products ranging from robotics systems to consumer smart devices. He has been practicing Agile software development since 2009.
 
-## Core Content
+## Site Sections
 
-- [About](/about) - Professional bio, skills, and background.
-- [Posts](/posts) - Articles on Software Engineering, Agile Leadership, and AI.
-- [Talks](/talks) - Conference talks and presentations (slides/video).
-- [External](/external) - Guest posts and external features.
+- [About](https://sergiocarrilho.com/about/): Professional bio, background, and skills.
+- [Blog Posts](https://sergiocarrilho.com/posts/): Original technical articles on AI agents, software architecture, and engineering.
+- [Talks](https://sergiocarrilho.com/talks/): Conference presentations at KotlinConf, iOSDC, Agile Japan, and Sony events.
+- [External Posts](https://sergiocarrilho.com/external/): Articles published on Medium and LinkedIn.
+- [Tags](https://sergiocarrilho.com/tags/): Browse content by topic.
 
-## Social Links
+## Blog Posts
 
-- [GitHub](https://github.com/scarrilho)
-- [LinkedIn](https://linkedin.com/in/scarrilho)
-- [Twitter/X](https://x.com/sergiocarrilho)
-- [YouTube](https://www.youtube.com/@sergiocarrilho)
-- [SpeakerDeck](https://speakerdeck.com/scarrilho)
-- [Medium](https://medium.com/@sergiocarrilho)
+- [Understanding OpenClaw's Architecture (A High-Level Tour)](https://sergiocarrilho.com/posts/clawdbot-architecture/): A high-level tour of OpenClaw's AI agent architecture — how it connects messaging, LLMs, tools, and memory into a single control loop to act on your computer. Covers the Gateway, Brain (LLM), Hands (Tools), Memory, and Control Loop components.
+- [AI Agents are Just People?](https://sergiocarrilho.com/posts/agents-are-people/): AI agents are just brain, hands, and memory — the same loop humans use to solve problems. Explores the structural mirror between biological cognition and digital agent architecture.
+
+## Conference Talks
+
+- Sony's KMP Journey: Scaling BLE & Hardware with Kotlin Multiplatform (KotlinConf 2026, upcoming)
+- Micro-reboots: The ACE mindset (Agile Japan 2025, Agile Japan Satellite 2026)
+- Sony's KMP/CMP journey (iOSDC 2025)
+- KotlinConf 2025 report (Sony Live Stream)
+- People over Process (Agile Japan 2025 Satellite)
+- Kotlin Multiplatform at Sony (Sony Live Stream at Connpass)
+
+## External Articles
+
+- How a AI Coding Agent Works (in ~100 lines of Kotlin) — Medium
+- Six Years, Zero Regrets: Sony's KMP Story — Medium
+- From Storming to Performing: Adaptive Leadership in Agile Teams — Medium
+- The Right Tool for the Job: Why Agile Isn't Always the Answer — Medium
+- 7 Lean Wastes Silently Slowing Agile Teams — LinkedIn
+- Doing vs. Being Agile: Are You Really Agile? — LinkedIn
+
+## Key Topics
+
+Sergio writes and speaks about:
+- **AI Agents**: Architecture, implementation patterns, coding agents, agentic workflows
+- **Kotlin Multiplatform (KMP)**: Adoption at Sony, cross-platform mobile development with Compose Multiplatform
+- **Agile Leadership**: ACE framework, lean waste reduction, adaptive leadership, team dynamics
+- **Software Engineering**: System architecture, scalable systems, product development
+
+## Social & Contact
+
+- GitHub: https://github.com/scarrilho
+- LinkedIn: https://linkedin.com/in/scarrilho
+- X/Twitter: https://x.com/sergiocarrilho
+- YouTube: https://www.youtube.com/@sergiocarrilho
+- SpeakerDeck: https://speakerdeck.com/scarrilho
+- Medium: https://sergiocarrilho.medium.com/

@@ -4,6 +4,7 @@
   event: "KotlinConf2026"
   youtube_id: ""
   speakerdeck_link: ""
+  link: "https://kotlinconf.com/speakers/c9f795ab-0a0e-4b19-bff1-0217db33f49a/"
   summary: "UPCOMING. I will talk about our journey of adopting KMP and CMP at Sony and how it transformed our mobile app development."
 
 - title: "Micro-reboots: The ACE mindset"
@@ -20,6 +21,7 @@
   event: "Agile Japan 2025"
   youtube_id: ""
   speakerdeck_link: "https://speakerdeck.com/sony/maikuroributo-acemaindosetutodeshi-xian-suruaziyairu"
+  link: "https://2025.agilejapan.jp/timetable_day1/"
   summary: "I present the ACE framework that we developed in my team that helped achieve big changes with small, time-boxed actions, one at a time. \nTalk in Japanese, slides in English."
 
 - title: "Sony's KMP/CMP journey"

@@ -43,32 +43,48 @@
                 <p class="talk-summary">{{ .summary }}</p>
 
                 <div class="talk-actions">
-                    {{ if .youtube_id }}
-                    <a href="https://www.youtube.com/watch?v={{ .youtube_id }}" target="_blank"
-                        rel="noopener noreferrer" class="talk-link-button primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-play-circle">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                        </svg>
-                        Watch Video
-                    </a>
-                    {{ end }}
+                    <div class="talk-links">
+                        {{ if .youtube_id }}
+                        <a href="https://www.youtube.com/watch?v={{ .youtube_id }}" target="_blank"
+                            rel="noopener noreferrer" class="talk-link-button primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-play-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                            Watch Video
+                        </a>
+                        {{ end }}
 
-                    {{ if .speakerdeck_link }}
-                    <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer"
-                        class="talk-link-button secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-monitor">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                        View Slides
-                    </a>
-                    {{ end }}
+                        {{ if .speakerdeck_link }}
+                        <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer"
+                            class="talk-link-button secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-monitor">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            View Slides
+                        </a>
+                        {{ end }}
+
+                        {{ if .link }}
+                        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
+                            class="talk-link-button secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Website
+                        </a>
+                        {{ end }}
+                    </div>
 
                     {{ $talkDate := .date | time.AsTime }}
                     {{ if $talkDate.After now }}
@@ -101,7 +117,7 @@
             },
             {{- $img := $parent.Resources.GetMatch .image -}}
             "image": {{ if $img }}{{ $img.Permalink | jsonify }}{{ else }}""{{ end }},
-            "url": {{ if .youtube_id }}{{ printf "https://www.youtube.com/watch?v=%s" .youtube_id | jsonify }}{{ else }}{{ .speakerdeck_link | jsonify }}{{ end }}
+            "url": {{ if .link }}{{ .link | jsonify }}{{ else if .youtube_id }}{{ printf "https://www.youtube.com/watch?v=%s" .youtube_id | jsonify }}{{ else }}{{ .speakerdeck_link | jsonify }}{{ end }}
           }
         }
         {{- end -}}
@@ -203,6 +219,13 @@
         gap: 1rem;
         flex-wrap: wrap;
         margin-top: auto;
+    }
+
+    .talk-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
     }
 
     .talk-link-button {

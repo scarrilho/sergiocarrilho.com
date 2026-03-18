@@ -43,7 +43,6 @@
                 <p class="talk-summary">{{ .summary }}</p>
 
                 <div class="talk-actions">
-                    <div class="talk-links">
                         {{ if .youtube_id }}
                         <a href="https://www.youtube.com/watch?v={{ .youtube_id }}" target="_blank"
                             rel="noopener noreferrer" class="talk-link-button btn-watch">
@@ -84,7 +83,6 @@
                             Website
                         </a>
                         {{ end }}
-                    </div>
 
                     {{ $talkDate := .date | time.AsTime }}
                     {{ if $talkDate.After now }}
@@ -221,13 +219,6 @@
         margin-top: auto;
     }
 
-    .talk-links {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: stretch;
-    }
-
     .talk-link-button {
         display: inline-flex;
         align-items: center;
@@ -245,6 +236,9 @@
         text-decoration: none;
         transition: opacity 0.2s;
         border: none;
+        
+        /* Ensure all buttons perfectly match in width to wrap consistently */
+        min-width: 145px;
     }
 
     .talk-link-button.btn-watch {

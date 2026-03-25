@@ -65,6 +65,9 @@ buildFuture = true
     name = "youtube"
     url = "https://www.youtube.com/@sergiocarrilho"
   [[params.socialIcons]]
+    name = "bluesky"
+    url = "https://bsky.app/profile/sergiocarrilho.bsky.social"
+  [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
 

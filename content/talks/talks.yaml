@@ -15,6 +15,15 @@
   speakerdeck_link: ""
   summary: "UPCOMING. Based on the talk I gave at Agile Japan 2025 with updated information"
 
+- title: "AI Agents are not Magic"
+  image: "mobiledevjp_ai_agents.jpg"
+  date: "2026-03-27"
+  event: "Mobile Dev Japan"
+  youtube_id: ""
+  speakerdeck_link: "https://speakerdeck.com/scarrilho/ai-agents-are-not-magic"
+  link: ""
+  summary: "Gave a short talk at Mobile Dev Japan on the building blocks of AI agents, with a simple demo using 100 lines of Kotlin code with Koog."
+
 - title: "Micro-reboots: The ACE mindset"
   image: "agilejapan2025cover.jpg"
   date: "2025-11-13"

@@ -56,7 +56,7 @@ buildFuture = true
     name = "linkedin"
     url = "https://linkedin.com/in/scarrilho"
   [[params.socialIcons]]
-    name = "twitter"
+    name = "x"
     url = "https://x.com/sergiocarrilho"
   [[params.socialIcons]]
     name = "medium"

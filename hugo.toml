@@ -31,7 +31,7 @@ buildFuture = true
 [params.profileMode]
   enabled = true
   title = "Sergio Carrilho"
-  subtitle = "Tech Lead @ Sony | Agile | AI | KMP\n\nWelcome to my personal website. I write about technology, leadership, and software engineering."
+  subtitle = "Tech Lead @ Sony | KMP | Agile | AI\n\nWelcome to my personal website. \n\nI write about technology, leadership, and software engineering."
   imageUrl = "/img/avatar.png"
   imageTitle = "Sergio Carrilho"
   imageWidth = 200

@@ -1,3 +1,12 @@
+- title: "Surviving & Thriving at KotlinConf: A pragmatic quick guide for Japanese attendees"
+  image: "dk-collect30.png"
+  date: "2026-05-29"
+  event: "DroidKaigi.collect"
+  youtube_id: ""
+  speakerdeck_link: "https://speakerdeck.com/scarrilho/surviving-and-thriving-at-kotlinconf-a-pragmatic-quick-guide-for-attendees-and-speakers-from-japan"
+  link: "https://droidkaigi.connpass.com/event/391168/"
+  summary: "Tips to Japanese participants and future speakers in KotlinConf. Based on my experience as both participant and speaker"
+
 - title: "Sony's KMP Journey: Scaling BLE & Hardware with Kotlin Multiplatform"
   image: "kotlinconf2026-sergio-sony-banner.jpeg"
   date: "2026-05-20"

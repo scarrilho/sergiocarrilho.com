@@ -3,9 +3,9 @@
   date: "2026-05-20"
   event: "KotlinConf2026"
   youtube_id: ""
-  speakerdeck_link: ""
+  speakerdeck_link: "https://speakerdeck.com/sony/sony-kmp-journey-kotlinconf2026"
   link: "https://kotlinconf.com/speakers/c9f795ab-0a0e-4b19-bff1-0217db33f49a/"
-  summary: "UPCOMING. I will talk about our journey of adopting KMP and CMP at Sony and how it transformed our mobile app development."
+  summary: "I will talk about our journey of adopting KMP and CMP at Sony and how it transformed our mobile app development."
 
 - title: "Micro-reboots: The ACE mindset"
   image: "AgileJapanSattelite2026.jpg"
@@ -13,7 +13,7 @@
   event: "Agile Japan Satellite Event 2026"
   youtube_id: ""
   speakerdeck_link: ""
-  summary: "UPCOMING. Based on the talk I gave at Agile Japan 2025 with updated information"
+  summary: "Based on the talk I gave at Agile Japan 2025 with updated information"
 
 - title: "AI Agents are not Magic"
   image: "mobiledevjp_ai_agents.jpg"

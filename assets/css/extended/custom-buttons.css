@@ -8,3 +8,9 @@
 :root[class="dark"] .buttons .button[href="/talks/"] {
     color: white;
 }
+
+/* Make all home page buttons the same length */
+.buttons .button {
+    min-width: 160px;
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+/* Custom styling for the Talks button on the home page */
+.buttons .button[href="/talks/"] {
+    background-color: #e63946;
+    color: white;
+    border-color: #e63946;
+}
+
+:root[class="dark"] .buttons .button[href="/talks/"] {
+    color: white;
+}

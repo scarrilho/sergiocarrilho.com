@@ -38,6 +38,10 @@ buildFuture = true
   imageHeight = 200
   
   [[params.profileMode.buttons]]
+    name = "Talks"
+    url = "/talks/"
+
+  [[params.profileMode.buttons]]
     name = "YouTube"
     url = "https://youtube.com/@sergiocarrilho"
 

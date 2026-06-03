@@ -49,10 +49,6 @@ buildFuture = true
     name = "SpeakerDeck"
     url = "https://speakerdeck.com/scarrilho"
     
-  [[params.profileMode.buttons]]
-    name = "SpeakerDeck Sony"
-    url = "https://speakerdeck.com/sony"
-    
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/scarrilho"

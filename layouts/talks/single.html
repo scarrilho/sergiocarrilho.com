@@ -43,46 +43,59 @@
                 <p class="talk-summary">{{ .summary }}</p>
 
                 <div class="talk-actions">
-                        {{ if .youtube_id }}
-                        <a href="https://www.youtube.com/watch?v={{ .youtube_id }}" target="_blank"
-                            rel="noopener noreferrer" class="talk-link-button btn-watch">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-play-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                            </svg>
-                            Watch Video
-                        </a>
-                        {{ end }}
+                    {{ if .youtube_id }}
+                    <a href="https://www.youtube.com/watch?v={{ .youtube_id }}" target="_blank"
+                        rel="noopener noreferrer" class="talk-link-button btn-watch">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-play-circle">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                        Watch Video
+                    </a>
+                    {{ end }}
 
-                        {{ if .speakerdeck_link }}
-                        <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer"
-                            class="talk-link-button btn-slides">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-monitor">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                            View Slides
-                        </a>
-                        {{ end }}
+                    {{ if .additional_video }}
+                    <a href="{{ .additional_video }}" target="_blank" rel="noopener noreferrer"
+                        class="talk-link-button btn-watch">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-play-circle">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                        Watch Video2
+                    </a>
+                    {{ end }}
 
-                        {{ if .link }}
-                        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
-                            class="talk-link-button btn-website">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-external-link">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                            Website
-                        </a>
-                        {{ end }}
+                    {{ if .speakerdeck_link }}
+                    <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer"
+                        class="talk-link-button btn-slides">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-monitor">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        View Slides
+                    </a>
+                    {{ end }}
+
+                    {{ if .link }}
+                    <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
+                        class="talk-link-button btn-website">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-external-link">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        Website
+                    </a>
+                    {{ end }}
 
                     {{ $talkDate := .date | time.AsTime }}
                     {{ if $talkDate.After now }}
@@ -224,7 +237,7 @@
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        
+
         /* Match Upcoming label perfectly */
         padding: 6px 12px;
         border-radius: 4px;
@@ -232,13 +245,13 @@
         font-weight: bold;
         letter-spacing: 0.5px;
         color: white;
-        
+
         text-decoration: none;
         transition: opacity 0.2s;
         border: none;
-        
+
         /* Ensure all buttons perfectly match in width to wrap consistently */
-        min-width: 145px;
+        min-width: 160px;
     }
 
     .talk-link-button.btn-watch {
@@ -247,12 +260,14 @@
     }
 
     .talk-link-button.btn-slides {
-        background: #666666; /* Medium grey */
+        background: #666666;
+        /* Medium grey */
         color: white;
     }
 
     .talk-link-button.btn-website {
-        background: #999999; /* Grey between Watch Video and View Slides */
+        background: #999999;
+        /* Grey between Watch Video and View Slides */
         color: #000;
     }
 

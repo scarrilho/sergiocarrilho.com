@@ -87,15 +87,9 @@ buildFuture = true
     weight = 5
 
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 20
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "videos"
+    name = "Videos"
+    url = "/videos/"
     weight = 10
 
   [[menu.main]]
@@ -105,20 +99,26 @@ buildFuture = true
     weight = 15
 
   [[menu.main]]
-    identifier = "videos"
-    name = "Videos"
-    url = "/videos/"
-    weight = 17
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 25
 
   [[menu.main]]
     identifier = "external"
     name = "Posts+"
     url = "/external/"
-    weight = 25
+    weight = 30
 
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 30
+    weight = 35
 

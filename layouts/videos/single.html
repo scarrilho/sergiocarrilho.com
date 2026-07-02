@@ -16,57 +16,28 @@
     {{ $data := $talks.Resources.GetMatch "talks.yaml" | transform.Unmarshal }}
     {{ $videos := where $data "youtube_id" "!=" "" }}
 
-    <div class="talks-grid">
+    <div class="videos-grid">
         {{ range $videos }}
-        <div class="talk-card">
-            <div class="talk-media">
-                <div class="video-embed">
-                    <iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube_id }}"
-                        title="{{ .title }}" loading="lazy" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
+        <div class="video-item">
+            <div class="video-embed">
+                <iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube_id }}"
+                    title="{{ .title }}" loading="lazy" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-
-            <div class="talk-details">
-                <h3 class="talk-title">{{ .title }}</h3>
-                <div class="talk-meta">
-                    <span class="talk-event">{{ .event }}</span>
-                    <span class="talk-date">{{ .date | time.Format ":date_medium" }}</span>
-                </div>
-                <p class="talk-summary">{{ .summary }}</p>
-
-                <div class="talk-actions">
-                    {{ if .speakerdeck_link }}
-                    <a href="{{ .speakerdeck_link }}" target="_blank" rel="noopener noreferrer"
-                        class="talk-link-button btn-slides">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-monitor">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                        View Slides
-                    </a>
-                    {{ end }}
-
-                    {{ if .link }}
-                    <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
-                        class="talk-link-button btn-website">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                        Website
-                    </a>
-                    {{ end }}
-                </div>
-            </div>
+            <h3 class="video-title" title="{{ .title }}">{{ .title }}</h3>
         </div>
+        {{ if .additional_video }}
+        <div class="video-item">
+            <div class="video-embed">
+                <iframe src="https://www.youtube-nocookie.com/embed/{{ .additional_video }}"
+                    title="{{ .title }}" loading="lazy" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <h3 class="video-title" title="{{ .title }}">{{ .title }}</h3>
+        </div>
+        {{ end }}
         {{ end }}
     </div>
 
@@ -97,43 +68,32 @@
 </div>
 
 <style>
-    .talks-grid {
+    .videos-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2.5rem;
         margin-top: 2rem;
     }
 
-    .talk-card {
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        overflow: hidden;
-        background: var(--entry);
-        transition: transform 0.2s, box-shadow 0.2s;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .talk-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .talk-media {
+    .video-embed {
         position: relative;
         width: 100%;
         aspect-ratio: 16/9;
         background: #000;
-        flex-shrink: 0;
+        border-radius: 8px;
         overflow: hidden;
     }
 
-    .video-embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    .video-title {
+        margin: 0.6rem 0 0 0 !important;
+        font-size: 0.9rem;
+        line-height: 1.35;
+        color: var(--secondary);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     .video-embed iframe {
@@ -145,81 +105,6 @@
         border: 0;
         display: block;
         margin: 0 !important;
-    }
-
-    .talk-details {
-        padding: 1rem 1.5rem 1.5rem;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
-
-    .talk-title {
-        margin: 0 0 0.5rem 0 !important;
-        font-size: 1.25rem;
-        line-height: 1.4;
-    }
-
-    .talk-meta {
-        font-size: 0.85rem;
-        color: var(--secondary);
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .talk-summary {
-        font-size: 0.95rem;
-        margin-bottom: 1.5rem;
-        flex-grow: 1;
-        line-height: 1.6;
-        white-space: pre-line;
-    }
-
-    .talk-actions {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-top: auto;
-    }
-
-    .talk-link-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        padding: 6px 12px;
-        border-radius: 4px;
-        font-size: 0.85rem;
-        font-weight: bold;
-        letter-spacing: 0.5px;
-        color: white;
-        text-decoration: none;
-        transition: opacity 0.2s;
-        border: none;
-        min-width: 160px;
-    }
-
-    .talk-link-button.btn-slides {
-        background: #666666;
-        color: white;
-    }
-
-    .talk-link-button.btn-website {
-        background: #999999;
-        color: #000;
-    }
-
-    :root[class="dark"] .talk-link-button {
-        color: white;
-    }
-
-    :root[class="dark"] .talk-link-button.btn-website {
-        color: #000;
-    }
-
-    .talk-link-button:hover {
-        opacity: 0.9;
     }
 </style>
 {{ end }}

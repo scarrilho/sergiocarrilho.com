@@ -14,7 +14,7 @@
   event: "KotlinConf2026"
   youtube_id: "VVf6txPZk3Y"
   speakerdeck_link: "https://speakerdeck.com/sony/sony-kmp-journey-kotlinconf2026"
-  link: "https://kotlinconf.com/speakers/c9f795ab-0a0e-4b19-bff1-0217db33f49a/"
+  link: ""
   additional_video: "TKUxeZ34dNI"
   summary: "I will talk about our journey of adopting KMP and CMP at Sony and how it transformed our mobile app development."
 

@@ -1,11 +1,11 @@
-/* Custom styling for the Talks button on the home page */
-.buttons .button[href="/talks/"] {
+/* Custom styling for the Videos button on the home page */
+.buttons .button[href="/videos/"] {
     background-color: #e63946;
     color: white;
     border-color: #e63946;
 }
 
-:root[class="dark"] .buttons .button[href="/talks/"] {
+:root[class="dark"] .buttons .button[href="/videos/"] {
     color: white;
 }
 

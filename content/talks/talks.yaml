@@ -12,10 +12,10 @@
   image: "kotlinconf2026-sergio-sony-banner.jpeg"
   date: "2026-05-20"
   event: "KotlinConf2026"
-  youtube_id: "TKUxeZ34dNI"
+  youtube_id: "VVf6txPZk3Y"
   speakerdeck_link: "https://speakerdeck.com/sony/sony-kmp-journey-kotlinconf2026"
   link: "https://kotlinconf.com/speakers/c9f795ab-0a0e-4b19-bff1-0217db33f49a/"
-  additional_video: ""
+  additional_video: "TKUxeZ34dNI"
   summary: "I will talk about our journey of adopting KMP and CMP at Sony and how it transformed our mobile app development."
 
 - title: "Micro-reboots: The ACE mindset"

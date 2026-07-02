@@ -42,6 +42,10 @@ buildFuture = true
     url = "/talks/"
 
   [[params.profileMode.buttons]]
+    name = "Videos"
+    url = "/videos/"
+
+  [[params.profileMode.buttons]]
     name = "YouTube"
     url = "https://youtube.com/@sergiocarrilho"
 
@@ -99,6 +103,12 @@ buildFuture = true
     name = "Talks"
     url = "/talks/"
     weight = 15
+
+  [[menu.main]]
+    identifier = "videos"
+    name = "Videos"
+    url = "/videos/"
+    weight = 17
 
   [[menu.main]]
     identifier = "external"

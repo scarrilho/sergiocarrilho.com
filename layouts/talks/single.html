@@ -35,11 +35,11 @@
             </div>
 
             <div class="talk-details">
-                <h3 class="talk-title">{{ .title }}</h3>
                 <div class="talk-meta">
                     <span class="talk-event">{{ .event }}</span>
                     <span class="talk-date">{{ .date | time.Format ":date_medium" }}</span>
                 </div>
+                <h3 class="talk-title">{{ .title }}</h3>
                 <p class="talk-summary">{{ .summary }}</p>
 
                 <div class="talk-actions">
@@ -205,16 +205,31 @@
     .talk-title {
         margin: 0 0 0.5rem 0 !important;
         /* Force reset of margins */
-        font-size: 1.25rem;
+        font-size: 1.1rem !important;
         line-height: 1.4;
     }
 
     .talk-meta {
-        font-size: 0.85rem;
-        color: var(--secondary);
-        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        color: var(--primary);
+        margin-bottom: 0.5rem;
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+
+    .talk-event {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary);
+    }
+
+    .talk-date {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--primary);
+        white-space: nowrap;
     }
 
     .talk-summary {

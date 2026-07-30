@@ -1,3 +1,13 @@
+- title: "93% Kotlin: How We Replaced 4 languages with CMP at Sony"
+  image: "dk-image.png"
+  date: "2026-05-03"
+  event: "DroidKaigi2026"
+  youtube_id: ""
+  speakerdeck_link: ""
+  link: "https://2026.droidkaigi.jp/"
+  additional_video: ""
+  summary: "Our journey of KMP and CMP adoption with a focus on experimentation \nTalk in Japanese, slides in English."
+
 - title: "Surviving & Thriving at KotlinConf: A pragmatic quick guide for Japanese attendees"
   image: "dk-collect30.png"
   date: "2026-05-29"

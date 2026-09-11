@@ -1,8 +1,8 @@
 ---
 title: "No Lectern, No Notes: Speaking at DroidKaigi2026"
 date: 2026-09-12T10:00:00+09:00
-draft: true
-tags: 
+draft: false
+tags: ["speaking", "conferences", "droidkaigi", "kmp", "japan", "sony"]
 author: "Sergio Carrilho"
 cover:
     image: "stag_title.png"
@@ -144,6 +144,8 @@ All in all, I wouldn't change a thing. I love these war stories, and I knew the 
 We had two demos. I have always liked Steve Jobs's 2007 iPhone reveal talk, where his demos were smooth. My goal had always been to achieve that level of smoothness: to avoid changing applications during the presentation. I was able to achieve this at KotlinConf 2026, and many people asked me how I did it. I will make another post explaining this in detail, but this time I wanted to go further than at KotlinConf. It would be the same demo, but now capturing sound, not from the device but from the Bluetooth headset, streaming it directly to my presentation with no change of screens.
 
 I was extremely happy when I was able to pull it off.
+
+![demo shot of autoplay running on the main thread](demo.jpg)
 
 The demo consisted of me walking: the headphones would recognize I was walking (thanks to their sensors), update the UI, and trigger a song on Spotify. When doing public talks, one needs to be careful about copyrighted content, so just playing any song would be risky. Fortunately, my father is an artist and has albums on Spotify, so I played one of his songs.
 

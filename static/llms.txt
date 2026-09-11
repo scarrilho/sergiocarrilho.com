@@ -14,12 +14,15 @@ Sergio Carrilho is a technology leader and software engineer based in Tokyo, Jap
 
 ## Blog Posts
 
+- [No Lectern, No Notes: Speaking at DroidKaigi 2026](https://sergiocarrilho.com/posts/droidkaigi-experience/): The full story behind the DroidKaigi 2026 talk on Sony's Kotlin Multiplatform journey — six weeks of preparation, a message map based on Talk Like TED, a first-time co-speaker, a lectern-free presentation style never tried before at DroidKaigi, a live Bluetooth-headset demo, and the mistakes made on stage.
 - [Understanding OpenClaw's Architecture (A High-Level Tour)](https://sergiocarrilho.com/posts/clawdbot-architecture/): A high-level tour of OpenClaw's AI agent architecture — how it connects messaging, LLMs, tools, and memory into a single control loop to act on your computer. Covers the Gateway, Brain (LLM), Hands (Tools), Memory, and Control Loop components.
 - [AI Agents are Just People?](https://sergiocarrilho.com/posts/agents-are-people/): AI agents are just brain, hands, and memory — the same loop humans use to solve problems. Explores the structural mirror between biological cognition and digital agent architecture.
 
 ## Conference Talks
 
-- Sony's KMP Journey: Scaling BLE & Hardware with Kotlin Multiplatform (KotlinConf 2026, upcoming)
+- 93% Kotlin: How We Replaced 4 Languages with Compose Multiplatform at Sony (DroidKaigi 2026, in Japanese)
+- Surviving & Thriving at KotlinConf: A pragmatic quick guide for Japanese attendees (DroidKaigi.collect 2026)
+- Sony's KMP Journey: Scaling BLE & Hardware with Kotlin Multiplatform (KotlinConf 2026)
 - Micro-reboots: The ACE mindset (Agile Japan 2025, Agile Japan Satellite 2026)
 - Sony's KMP/CMP journey (iOSDC 2025)
 - KotlinConf 2025 report (Sony Live Stream)

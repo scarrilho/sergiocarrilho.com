@@ -1,16 +1,18 @@
 ---
-title: "No Lectern, No Notes: Speaking at DroidKaigi2026"
+title: "No Lectern, No Notes: Speaking at DroidKaigi 2026"
+summary: "The full story behind our DroidKaigi 2026 talk on Sony's Kotlin Multiplatform journey: six weeks of preparation, a first-time co-speaker, a lectern-free presentation style never tried before at DroidKaigi, a live Bluetooth-headset demo, and the mistakes I made on stage."
 date: 2026-09-12T10:00:00+09:00
 draft: false
 tags: ["speaking", "conferences", "droidkaigi", "kmp", "japan", "sony"]
+keywords: ["DroidKaigi 2026", "public speaking", "conference talk preparation", "Kotlin Multiplatform", "Compose Multiplatform", "Sony", "presentation skills", "Japan tech conferences", "KotlinConf 2026", "co-speaker"]
 author: "Sergio Carrilho"
 cover:
     image: "stag_title.png"
-    alt: ": A solitary stag stepping out from the protective shadows of a dense tree line into a vast, exposed clearing"
-    relative: false
+    alt: "A solitary stag stepping out from the shadows of a dense tree line into a vast, exposed clearing — presenting without a lectern"
+    relative: true
 ---
 
-It is 12:20 on September 3rd, and I am on stage at DroidKaigi 2026, the largest Android conference in Japan. It is my time to talk. I have been preparing for this moment for the last six weeks. The timer starts, the first line comes out fine, and then... I forget the next one.
+It is 12:20 on September 3rd, 2026, and I am on stage at [DroidKaigi 2026](https://2026.droidkaigi.jp/en/), the largest Android conference in Japan. It is my time to talk. I have been preparing for this moment for the last six weeks. The timer starts, the first line comes out fine, and then... I forget the next one.
 
 ## How It All Began
 
@@ -20,7 +22,7 @@ The submission deadline for DroidKaigi 2026 was May 17. I *really* wanted to sha
 
 The KotlinConf talk was 45 minutes long, which wouldn't allow me to go too deep into any of the framework items. Therefore, I decided to submit a talk focusing on the "experimentation" item, one of my favorites, as I am also into Agile.
 
-![kotlinconf2026 sony framework](kotlinconf2026-framework.png)
+![Slide from the KotlinConf 2026 talk showing Sony's four-point technology adoption framework: use-case fit, ecosystem, tooling, and experimentation](kotlinconf2026-framework.png)
 
 I asked my colleague Fujita, who has been with me since the beginning, if he was willing to be a co-speaker for our story. This would be my first time giving a talk with a co-speaker. Fujita and another colleague, Takuro, are my go-to friends for reviewing my presentation material for other conferences. In fact, I changed 30% of my initial KotlinConf talk thanks to their invaluable feedback.
 
@@ -56,14 +58,14 @@ I usually start with a Message Map inspired by Carmine Gallo's *Talk Like TED*. 
 
 We discussed, debated, and asked people about this. We knew what we wanted to talk about, but I am always looking for ways to package information so it is easy for the audience to understand. The final message map was the following:
 
-![message map for the DroidKaigi2026 talk](message_map.jpeg)
+![Message map for the DroidKaigi 2026 talk: one overarching message delivered through three key messages](message_map.jpeg)
 
 
 #### 2. Structure
 
-How do we structure all the information we have so it is easy to understand? We had a head start here because of my KotlinConf 2026 talk. Therefore, we organized it like this:
+How do we structure all the information we have so it is easy to understand? We had a head start here because of my [KotlinConf 2026 talk](/talks/). Therefore, we organized it like this:
 
-![complete message map for the DroidKaigi2026 talk](message_map_complete.jpeg)
+![Complete message map for the DroidKaigi 2026 talk, showing how the supporting points are structured under each key message](message_map_complete.jpeg)
 
 #### 3. The Story Arc
 
@@ -71,10 +73,10 @@ I personally love having an arc to the talk, where we have a start, a middle, an
 
 The title of the talk was: *Reaching 93% Kotlin: Replacing 4 Languages with Compose Multiplatform at Sony*.
 
-![the inital slide with the 53.1% metrics](initial_kotlin_53.jpeg)
+![Opening slide of the DroidKaigi 2026 talk showing Kotlin at 53.1% of the codebase](initial_kotlin_53.jpeg)
 
 So we started with Kotlin at 53%. That was literally the first slide. And we ended with Kotlin at 93.9%, completing the loop. 
-![one of the slides with the 93.9% metrics](final_state_94_percent.jpeg)
+![Closing slide of the DroidKaigi 2026 talk showing Kotlin at 93.9% of the codebase after adopting Compose Multiplatform](final_state_94_percent.jpeg)
 
 
 ### Practice and Adjustments
@@ -95,7 +97,7 @@ You can check the full deck on [Sony's SpeakerDeck](https://speakerdeck.com/sony
 
 We scheduled 3 dry runs where we would run the full presentation in an environment that resembled the real stage. There is a nice space on the 24th floor of the Sony building with a projector and a sound system, including wired and wireless mics and cameras.
 
-![rehearsal at sony](rehearsal.jpg)
+![Dry run of the DroidKaigi 2026 talk on the 24th floor of the Sony building, using a projector, sound system and microphones](rehearsal.jpg)
 
 We practiced the first time about a week and a half before the conference, on a Friday, with the new slides, and took a video. It was not that great, but that is expected. We provided feedback to each other, which was really nice. Japanese is not my native language, so Fujita gave me a lot of advice on which words to use and which *not* to use.
 
@@ -111,7 +113,7 @@ The last practice was good. We were ready for the talk. Or so we thought.
 
 I really like to connect with the audience, and I have some strong opinions about this. At DroidKaigi, like at many other conferences, the speaker stays behind the lectern and presents looking at the computer. I don't like lecterns. I don't like to have *anything* between me and the audience, as I believe that the best way to transmit information is to have a conversation.
 
-![sergio presenting in front of the lectern](sergio_presenting2.jpg)
+![Sergio Carrilho presenting at DroidKaigi 2026 in front of the lectern, facing the audience directly](sergio_presenting2.jpg)
 
 As far as I know from the videos of previous DroidKaigis and from talking with staff and participants, having the lectern behind you has never been done. So this was the first challenge: to request something that unusual, never done at DroidKaigi. I was kind of expecting that the request would be refused.
 
@@ -123,7 +125,7 @@ Eventually, that was the style we went with.
 
 I was fortunate that the DroidKaigi staff accepted my request to push the lectern back and allow me to present directly in front of the audience. Also, my demo required some walking on the stage, which created some new challenges for the AV staff. I know this created hurdles, like having to adjust the lighting and having someone operate the camera to follow me walking on the stage, and I am really grateful for it. I truly believe it contributed to transmitting the message to the audience.
 
-![picture from the back of room showing the presenter and the slides](presentation_from_far.jpeg)
+![View from the back of the DroidKaigi 2026 room, with the speaker standing in front of the audience and the slides projected behind](presentation_from_far.jpeg)
 
 Fujita told me afterwards that he almost gave up on this style, but we are all glad we did it. For the first time at DroidKaigi, we presented directly to the audience, without looking at the computer or leaning on the lectern, and we had a blast.
 
@@ -145,7 +147,7 @@ We had two demos. I have always liked Steve Jobs's 2007 iPhone reveal talk, wher
 
 I was extremely happy when I was able to pull it off.
 
-![demo shot of autoplay running on the main thread](demo.jpg)
+![Live demo at DroidKaigi 2026: the Bluetooth headset detects walking, updates the Compose Multiplatform UI and starts a song](demo.jpg)
 
 The demo consisted of me walking: the headphones would recognize I was walking (thanks to their sensors), update the UI, and trigger a song on Spotify. When doing public talks, one needs to be careful about copyrighted content, so just playing any song would be risky. Fortunately, my father is an artist and has albums on Spotify, so I played one of his songs.
 
@@ -168,3 +170,14 @@ I am still reflecting on the whole episode, but the main lessons I took are:
 * **Step out of your comfort zone.** You only step up when you push yourself. The challenge this time was to have a co-speaker and to do such a high-profile talk in Japanese, when it would have been so much easier to do in English.
 * **It is OK to make mistakes.** Everyone does it. It doesn't matter how prepared you are; unexpected things will always happen.
 * **The final and most important lesson.** I already knew this, but it was nice to be reminded of it: **the audience is rooting for you**. As long as you are enthusiastic about your message and you put in the work, it doesn't matter what happens—you will be fine.
+
+## Talk Details
+
+* **Talk:** 93% Kotlin: How We Replaced 4 Languages with Compose Multiplatform at Sony
+* **Event:** DroidKaigi 2026, Tokyo — September 3, 2026, 12:20
+* **Speakers:** Sergio Carrilho and Fujita (Sony)
+* **Language:** Japanese, with English slides and English subtitles on the recording
+* **Session page:** [2026.droidkaigi.jp timetable](https://2026.droidkaigi.jp/en/timetable/1235989/)
+* **Slides:** [Sony's SpeakerDeck](https://speakerdeck.com/sony/sony-droidkaigi2026)
+* **Recording:** [YouTube](https://youtu.be/UWalcwoLeSM) (demo at [22:14](https://youtu.be/UWalcwoLeSM?t=1334))
+* **More talks:** [all my talks](/talks/)

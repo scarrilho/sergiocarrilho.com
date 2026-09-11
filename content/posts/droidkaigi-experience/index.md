@@ -154,13 +154,15 @@ I was extremely happy when I was able to pull it off.
 
 The demo consisted of me walking: the headphones would recognize I was walking (thanks to their sensors), update the UI, and trigger a song on Spotify. When doing public talks, one needs to be careful about copyrighted content, so just playing any song would be risky. Fortunately, my father is an artist and has albums on Spotify, so I played one of his songs.
 
-You can check the demo in the YouTube recording.
+You can check the demo in the [YouTube recording, starting at 22:14](https://youtu.be/UWalcwoLeSM?t=1334).
 
 ## The Results
 
 We got a lot of positive feedback, both soon after the talk and from people coming to the Sony booth to talk about the presentation and the topic. Also, it gave us an opportunity to interact with the community, get to know a lot of interesting people, and hear about stories and similar challenges in areas different from ours.
 
-At the time of this writing (September 11), our talk's YouTube recording is among the top 5 most viewed and liked videos of DroidKaigi 2026. Feel free to check it out for yourself.
+At the time of this writing (September 11), our talk's YouTube recording is among the top 5 most viewed and liked videos of DroidKaigi 2026. Here it is in full:
+
+{{< youtube UWalcwoLeSM >}}
 
 ## Lessons Learned
 

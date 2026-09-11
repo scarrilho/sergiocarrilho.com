@@ -1,0 +1,6 @@
+{{- $url := .Get "url" | default (.Get 0) -}}
+{{- with resources.GetRemote (printf "https://speakerdeck.com/oembed.json?url=%s" (urlquery $url)) -}}
+  <div class="speakerdeck-embed">{{ (unmarshal .Content).html | safeHTML }}</div>
+{{- else -}}
+  {{- errorf "speakerdeck shortcode: no deck found at %s" $url -}}
+{{- end -}}

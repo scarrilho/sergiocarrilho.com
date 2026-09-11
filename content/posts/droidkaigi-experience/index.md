@@ -14,7 +14,7 @@ It is 12:20 on September 3rd, and I am on stage at DroidKaigi 2026, the largest 
 
 ## How It All Began
 
-It was May 2026, and I was preparing to present at **KotlinConf 2026**, the main conference that brings the Kotlin community together, organized by JetBrains. My talk centered on how Sony adopted Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP), working with hardware while these technologies were still in their unstable, early days. The main theme was our four-point framework for technology adoption: **use-case fit, ecosystem, tooling, and experimentation**.
+It was May 2026, and I was preparing to present at **KotlinConf 2026**, the main conference that brings the Kotlin community together, organized by JetBrains. [My talk](https://www.youtube.com/watch?v=VVf6txPZk3Y) centered on how Sony adopted Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP), working with hardware while these technologies were still in their unstable, early days. The main theme was our four-point framework for technology adoption: **use-case fit, ecosystem, tooling, and experimentation**.
 
 The submission deadline for DroidKaigi 2026 was May 17. I *really* wanted to share our story and lessons with the Japanese community—which many of my friends belong to—and I wanted to do it in Japanese.
 

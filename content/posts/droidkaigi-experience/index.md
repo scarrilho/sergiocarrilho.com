@@ -87,7 +87,7 @@ The next step was working on a script: a text file with each person's part. We w
 
 ### Slides
 
-One and a half weeks before the conference, once we were happy with the story and our respective parts, it was time for the slides. We already had a head start here too because of the KotlinConf slides, as well as material from previous tech conferences where I had presented. Since all the material is made in my signature style (pitch-black background, with specific typography that works well with English and Japanese), we could reuse around 20% of it. The rest was newly created, but with the story and the script's main points already in place, that is really easy to do.
+One and a half weeks before the conference, once we were happy with the story and our respective parts, it was time for the slides. We already had a head start here too because of the KotlinConf slides, as well as material from previous tech conferences where I had presented, like iOSDC 2025 and Agile Japan 2025. Since all the material is made in my signature style (pitch-black background, with specific typography that works well with English and Japanese), we could reuse around 20% of it with few visual changes. The rest was newly created, but with the story and the script's main points already in place, that is really easy to do.
 
 You can check the full deck on [Sony's SpeakerDeck](https://speakerdeck.com/sony/sony-droidkaigi2026):
 
@@ -113,7 +113,7 @@ The last practice was good. We were ready for the talk. Or so we thought.
 
 I really like to connect with the audience, and I have some strong opinions about this. At DroidKaigi, like at many other conferences, the speaker stays behind the lectern and presents looking at the computer. I don't like lecterns. I don't like to have *anything* between me and the audience, as I believe that the best way to transmit information is to have a conversation.
 
-The same goes for a co-speaker. I have seen many talks with two speakers where, while one of them is speaking, I get distracted by the movements of the other one just standing there doing nothing. I didn't want that for our talk, so we agreed that whoever was not speaking would disappear. Completely. Not just step off the stage, but go deep into the shadows. The handovers would be quick. We focus on the message, and give the whole attention to the messenger.
+The same goes for a co-speaker. I have seen many talks with two speakers where, while one of them is speaking, I get distracted by the movements of the other one just standing there doing nothing. I didn't want that for our talk, so we agreed that whoever was not speaking would disappear. Completely. Not just step off the stage, but go deep into the shadows. The handovers would be quick and unobtrusive. We focus on the message, and give the whole attention to the messenger.
 
 ![Sergio Carrilho presenting at DroidKaigi 2026 in front of the lectern, facing the audience directly](sergio_presenting2.jpg)
 
@@ -159,7 +159,7 @@ You can check the demo in the [YouTube recording, starting at 22:14](https://you
 
 We got a lot of positive feedback, both soon after the talk and from people coming to the Sony booth to talk about the presentation and the topic. Also, it gave us an opportunity to interact with the community, get to know a lot of interesting people, and hear about stories and similar challenges in areas different from ours.
 
-At the time of this writing (September 11), our talk's YouTube recording is among the top 5 most viewed and liked videos of DroidKaigi 2026. Here it is in full:
+At the time of this writing (September 12), our talk's YouTube recording is among the top 5 most viewed and liked videos of DroidKaigi 2026. Here it is in full:
 
 {{< youtube UWalcwoLeSM >}}
 
@@ -167,7 +167,7 @@ At the time of this writing (September 11), our talk's YouTube recording is amon
 
 I am still reflecting on the whole episode, but the main lessons I took are:
 
-* **Japan tech conferences are amazing.** The mood at DroidKaigi is more like a festival (祭り, *matsuri*). If you have the opportunity, apply for it; it is one of the best conferences around.
+* **Japan tech conferences are amazing.** The mood at DroidKaigi is more like a festival (祭り, *matsuri*). If you have the opportunity, apply for it; it is one of the best conferences I have ever attended.
 * **It pays off to put in all the work necessary for a memorable talk.** It is hard work, but the results are incredibly gratifying.
 * **Step out of your comfort zone.** You only step up when you push yourself. The challenge this time was to have a co-speaker and to do such a high-profile talk in Japanese, when it would have been so much easier to do in English.
 * **It is OK to make mistakes.** Everyone does it. It doesn't matter how prepared you are; unexpected things will always happen.

@@ -125,6 +125,8 @@ Eventually, that was the style we went with.
 
 I was fortunate that the DroidKaigi staff accepted my request to push the lectern back and allow me to present directly in front of the audience. Also, my demo required some walking on the stage, which created some new challenges for the AV staff. I know this created hurdles, like having to adjust the lighting and having someone operate the camera to follow me walking on the stage, and I am really grateful for it. I truly believe it contributed to transmitting the message to the audience.
 
+There was one more rule we set for ourselves: the speaker on stage gets 100% of the attention. I have seen many talks with two speakers, and often, while one of them is speaking, I get distracted by the movements of the other one just standing there doing nothing. I didn't want that for our talk, so we agreed that whoever was not speaking would disappear. Completely. Not just step off the stage, but go deep into the shadows. The handovers would be quick and without much interaction. Focus on the message, and give the whole attention to the messenger.
+
 ![View from the back of the DroidKaigi 2026 room, with the speaker standing in front of the audience and the slides projected behind](presentation_from_far.jpeg)
 
 Fujita told me afterwards that he almost gave up on this style, but we are all glad we did it. We presented directly to the audience, without looking at the computer or leaning on the lectern, and we had a blast.

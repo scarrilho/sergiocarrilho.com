@@ -38,7 +38,7 @@ I plan to dive deeper into preparations for top conferences in another post, so 
 
 * **The talk would be in Japanese.** I wanted to reach the Japanese community directly. For everyone else, the YouTube recording would be fine, and the English subtitles are usually quite good.
 * **We would divide the talk**, and each member would deliver a part. No interaction between us. This would decrease the number of handovers and make things easier overall.
-* **We would present in my usual style:** directly in front of the audience, without access to the slides. This would be the first time this was done at DroidKaigi, and it would be a challenge for Fujita since it was his first big conference. We didn't know if this would work. More on this later.
+* **We would present in my usual style:** directly in front of the audience, without access to the slides. As far as I could tell, this had not been done at DroidKaigi before, and it would be a challenge for Fujita since it was his first big conference. We didn't know if this would work. More on this later.
 
 We started preparations in mid-July, 1.5 months before the conference:
 
@@ -113,6 +113,8 @@ The last practice was good. We were ready for the talk. Or so we thought.
 
 I really like to connect with the audience, and I have some strong opinions about this. At DroidKaigi, like at many other conferences, the speaker stays behind the lectern and presents looking at the computer. I don't like lecterns. I don't like to have *anything* between me and the audience, as I believe that the best way to transmit information is to have a conversation.
 
+The same goes for a co-speaker. I have seen many talks with two speakers where, while one of them is speaking, I get distracted by the movements of the other one just standing there doing nothing. I didn't want that for our talk, so we agreed that whoever was not speaking would disappear. Completely. Not just step off the stage, but go deep into the shadows. The handovers would be quick. We focus on the message, and give the whole attention to the messenger.
+
 ![Sergio Carrilho presenting at DroidKaigi 2026 in front of the lectern, facing the audience directly](sergio_presenting2.jpg)
 
 As far as I could tell from watching recordings of previous DroidKaigi talks and from talking with staff and participants, presenting directly in front of the audience, with the lectern behind you, was not something that had been done before. So the first challenge was to request something that unusual. I was kind of expecting that the request would be refused.
@@ -124,8 +126,6 @@ And there is the fact that being right in front of the audience, with nothing be
 Eventually, that was the style we went with.
 
 I was fortunate that the DroidKaigi staff accepted my request to push the lectern back and allow me to present directly in front of the audience. Also, my demo required some walking on the stage, which created some new challenges for the AV staff. I know this created hurdles, like having to adjust the lighting and having someone operate the camera to follow me walking on the stage, and I am really grateful for it. I truly believe it contributed to transmitting the message to the audience.
-
-There was one more rule we set for ourselves: the speaker on stage gets 100% of the attention. I have seen many talks with two speakers, and often, while one of them is speaking, I get distracted by the movements of the other one just standing there doing nothing. I didn't want that for our talk, so we agreed that whoever was not speaking would disappear. Completely. Not just step off the stage, but go deep into the shadows. The handovers would be quick and without much interaction. Focus on the message, and give the whole attention to the messenger.
 
 ![View from the back of the DroidKaigi 2026 room, with the speaker standing in front of the audience and the slides projected behind](presentation_from_far.jpeg)
 

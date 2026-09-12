@@ -109,13 +109,13 @@ The next dry run was OK. My family was coming to Japan, so I took some days off,
 
 The last practice was good. We were ready for the talk. Or so we thought.
 
-## A New Talk Style
+## An Unusual Talk Style
 
 I really like to connect with the audience, and I have some strong opinions about this. At DroidKaigi, like at many other conferences, the speaker stays behind the lectern and presents looking at the computer. I don't like lecterns. I don't like to have *anything* between me and the audience, as I believe that the best way to transmit information is to have a conversation.
 
 ![Sergio Carrilho presenting at DroidKaigi 2026 in front of the lectern, facing the audience directly](sergio_presenting2.jpg)
 
-As far as I know from the videos of previous DroidKaigis and from talking with staff and participants, having the lectern behind you has never been done. So this was the first challenge: to request something that unusual, never done at DroidKaigi. I was kind of expecting that the request would be refused.
+As far as I could tell from watching recordings of previous DroidKaigi talks and from talking with staff and participants, presenting directly in front of the audience, with the lectern behind you, was not something that had been done before. So the first challenge was to request something that unusual. I was kind of expecting that the request would be refused.
 
 The second challenge was that Fujita might feel uncomfortable with this style. You see, with this style you don't have access to speaker notes, and you cannot see which slide is next. The computer is behind you, you only have a clicker, and you are on your own. You have to know your talk by heart. That doesn't mean you have to memorize it, but you need to know what slide comes after which slide, which makes the talk smoother. If you miss one slide, it may mess things up (actually, I *did* miss one slide). There is a confidence screen (the screen in front of you on the floor), but it just shows you which slide is active, as it mirrors what the audience is seeing, so it is kind of useless for anything else.
 
@@ -127,7 +127,7 @@ I was fortunate that the DroidKaigi staff accepted my request to push the lecter
 
 ![View from the back of the DroidKaigi 2026 room, with the speaker standing in front of the audience and the slides projected behind](presentation_from_far.jpeg)
 
-Fujita told me afterwards that he almost gave up on this style, but we are all glad we did it. For the first time at DroidKaigi, we presented directly to the audience, without looking at the computer or leaning on the lectern, and we had a blast.
+Fujita told me afterwards that he almost gave up on this style, but we are all glad we did it. We presented directly to the audience, without looking at the computer or leaning on the lectern, and we had a blast.
 
 ## The Talk
 

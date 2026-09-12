@@ -20,9 +20,9 @@ It was May 2026, and I was preparing to present at **KotlinConf 2026**, the main
 
 The submission deadline for DroidKaigi 2026 was May 17. I *really* wanted to share our story and lessons with the Japanese community, which many of my friends belong to, and I wanted to do it in Japanese.
 
-The KotlinConf talk was 45 minutes long, which wouldn't allow me to go too deep into any of the framework items. Therefore, I decided to submit a talk focusing on the "experimentation" item, one of my favorites, as I am also into Agile.
-
 ![Slide from the KotlinConf 2026 talk showing Sony's four-point technology adoption framework: use-case fit, ecosystem, tooling, and experimentation](kotlinconf2026-framework.png)
+
+The KotlinConf talk was 45 minutes long, which wouldn't allow me to go too deep into any of the framework items. Therefore, I decided to submit a talk focusing on the "experimentation" item, one of my favorites, as I am also into Agile.
 
 I asked my colleague Fujita, who has been with me since the beginning, if he was willing to be a co-speaker for our story. This would be my first time giving a talk with a co-speaker. Fujita and another colleague, Takuro, are my go-to friends for reviewing my presentation material for other conferences. In fact, I changed 30% of my initial KotlinConf talk thanks to their invaluable feedback.
 

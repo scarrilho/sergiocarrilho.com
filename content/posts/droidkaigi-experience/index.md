@@ -167,7 +167,7 @@ At the time of this writing (September 12), our talk's YouTube recording is amon
 
 I am still reflecting on the whole episode, but the main lessons I took are:
 
-* **Japan tech conferences are amazing.** The mood at DroidKaigi is more like a festival (祭り, *matsuri*). If you have the opportunity, apply for it; it is one of the best conferences I have ever attended.
+* **Japan tech conferences are amazing.** And DroidKaigi is the best of them. The mood at DroidKaigi is more like a festival (祭り, *matsuri*). If you have the opportunity, apply for it; it is one of the best conferences I have ever attended.
 * **It pays off to put in all the work necessary for a memorable talk.** It is hard work, but the results are incredibly gratifying.
 * **Step out of your comfort zone.** You only step up when you push yourself. The challenge this time was to have a co-speaker and to do such a high-profile talk in Japanese, when it would have been so much easier to do in English.
 * **It is OK to make mistakes.** Everyone does it. It doesn't matter how prepared you are; unexpected things will always happen.

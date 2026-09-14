@@ -1,6 +1,6 @@
 ---
 title: "No Lectern, No Notes: Speaking at DroidKaigi 2026"
-summary: "The full story behind our DroidKaigi 2026 talk on Sony's Kotlin Multiplatform journey: six weeks of preparation, a first-time co-speaker, a lectern-free presentation style never tried before at DroidKaigi, a live Bluetooth-headset demo, and the mistakes I made on stage."
+summary: "How we prepared our DroidKaigi 2026 talk on Sony's Kotlin Multiplatform journey. We did it in Japanese, with a co-speaker, standing in front of the lectern instead of behind it. I forgot my second sentence and missed a slide, and it still went well."
 date: 2026-09-12T10:00:00+09:00
 draft: false
 tags: ["speaking", "conferences", "droidkaigi", "kmp", "japan", "sony"]
@@ -159,7 +159,7 @@ You can check the demo in the [YouTube recording, starting at 22:14](https://you
 
 We got a lot of positive feedback, both soon after the talk and from people coming to the Sony booth to talk about the presentation and the topic. Also, it gave us an opportunity to interact with the community, get to know a lot of interesting people, and hear about stories and similar challenges in areas different from ours.
 
-At the time of this writing (September 12), our talk's YouTube recording is among the top 5 most viewed and liked videos of DroidKaigi 2026. Here it is in full:
+At the time of this writing (September 12), our talk's YouTube recording is among the top 5 most viewed and the most liked video of DroidKaigi 2026. Here it is in full:
 
 {{< youtube UWalcwoLeSM >}}
 
